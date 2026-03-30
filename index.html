@@ -1,5 +1,174 @@
 ---
-layout: home
-title: My website
-subtitle: This is where I will tell my friends way too much about me
+layout: page
+title: Mark Adamik
+subtitle: PhD researcher in artificial intelligence, knowledge representation, and robotics
+full-width: true
 ---
+
+{% assign cv_url = '/resources/cv/mark-adamik-cv-2025-02.pdf' | relative_url %}
+{% assign talks_archive_url = '/resources/presentations/presentations-archive-2026-03-30.zip' | relative_url %}
+{% assign talk_delft_url = '/resources/presentations/pdf/2026-03-20-cognitive-robotics-lab-delft.pdf' | relative_url %}
+{% assign talk_robovis_url = '/resources/presentations/pdf/2026-03-04-robovis.pdf' | relative_url %}
+{% assign talk_landr_url = '/resources/presentations/pdf/2026-02-16-landr-colloquium-hyperdimensional-computing.pdf' | relative_url %}
+{% assign talk_kcap_url = '/resources/presentations/pdf/2025-12-11-k-cap.pdf' | relative_url %}
+{% assign talk_cmvs_url = '/resources/presentations/pdf/2025-11-27-cmvs-seminar-talk.pdf' | relative_url %}
+{% assign talk_aaai_url = '/resources/presentations/pdf/2025-11-07-aaai-fss.pdf' | relative_url %}
+
+{% assign pub_bridging_bots_url = '/resources/publications/bridging-bots-2025.pdf' | relative_url %}
+{% assign pub_planowl_url = '/resources/publications/planowl-2025.pdf' | relative_url %}
+{% assign pub_kcap_url = '/resources/publications/k-cap-2025-paper.pdf' | relative_url %}
+{% assign pub_orka_url = '/resources/publications/orka-2025.pdf' | relative_url %}
+{% assign pub_pel_springer_url = '/resources/publications/advancing-robotic-perception-2025.pdf' | relative_url %}
+{% assign pub_aaai24_url = '/resources/publications/large-scale-knowledge-graphs-robotic-perception-2024.pdf' | relative_url %}
+{% assign pub_copla_url = '/resources/publications/copla-ontology-2024.pdf' | relative_url %}
+{% assign pub_pel_workshop_url = '/resources/publications/perceived-entity-linking-problem-2023.pdf' | relative_url %}
+{% assign pub_explainability_url = '/resources/publications/explainability-collaborative-robotics-2022.pdf' | relative_url %}
+{% assign pub_trust_url = '/resources/publications/personalizing-robot-appearance-trust-2021.pdf' | relative_url %}
+
+<div class="research-home">
+  <section class="hero-band">
+    <div class="hero-copy">
+      <p class="eyebrow">Research profile</p>
+      <h1>Robotic perception, knowledge graphs, and neuro-symbolic AI.</h1>
+      <p class="hero-lead">PhD researcher at VU Amsterdam working on perception, reasoning, and embodied AI.</p>
+      <div class="hero-actions">
+        <a class="button-primary" href="{{ cv_url }}">Download CV</a>
+        <a class="button-secondary" href="#publications">Browse publications</a>
+        <a class="button-secondary" href="#presentations">See talks</a>
+      </div>
+    </div>
+    <aside class="profile-card">
+      <h2>At a glance</h2>
+      <ul class="fact-list">
+        <li>PhD in Artificial Intelligence, Vrije Universiteit Amsterdam</li>
+        <li>Robotic perception, ontologies, and knowledge graphs</li>
+        <li>Teaching and student supervision in robotics</li>
+        <li>PDC completed in 2021</li>
+      </ul>
+    </aside>
+  </section>
+
+  <section class="priority-grid">
+    <article class="priority-card priority-card-main" id="cv">
+      <p class="section-label">Priority one</p>
+      <h2>Curriculum vitae</h2>
+      <p>The best short overview of my academic background, research, and teaching.</p>
+      <ul class="fact-list">
+        <li>PhD research on symbolic and sub-symbolic AI for robot perception</li>
+        <li>Robotics BSc and MSc at Aalborg University</li>
+        <li>Experience across robotics, NLP, vision, and control</li>
+      </ul>
+      <a class="text-link" href="{{ cv_url }}">Open the full CV</a>
+    </article>
+
+    <article class="priority-card">
+      <p class="section-label">Research areas</p>
+      <h2>What I work on</h2>
+      <div class="tag-row">
+        <span>Robotic perception</span>
+        <span>Knowledge graphs</span>
+        <span>Ontology engineering</span>
+        <span>Neuro-symbolic AI</span>
+        <span>Planning</span>
+        <span>Permaculture</span>
+      </div>
+    </article>
+
+    <article class="priority-card">
+      <p class="section-label">Personal</p>
+      <h2>Beyond research</h2>
+      <p>Interests include permaculture, travel, and hosting through Couchsurfing.</p>
+      <a class="text-link" href="/personal/">See personal links</a>
+    </article>
+  </section>
+
+  <section class="content-section" id="presentations">
+    <div class="section-heading">
+      <p class="section-label">Priority two</p>
+      <h2>Selected presentations</h2>
+      <a class="text-link" href="{{ talks_archive_url }}">Download full presentation archive</a>
+    </div>
+    <div class="timeline-list">
+      <article>
+        <p class="timeline-date">March 20, 2026</p>
+        <h3><a href="{{ talk_delft_url }}">Cognitive Robotics Lab Delft</a></h3>
+        <p>Research talk.</p>
+      </article>
+      <article>
+        <p class="timeline-date">March 4, 2026</p>
+        <h3><a href="{{ talk_robovis_url }}">ROBOVIS</a></h3>
+        <p>Vision and perception.</p>
+      </article>
+      <article>
+        <p class="timeline-date">February 16, 2026</p>
+        <h3><a href="{{ talk_landr_url }}">L&amp;R Colloquium on Hyperdimensional Computing</a></h3>
+        <p>AI and representation.</p>
+      </article>
+      <article>
+        <p class="timeline-date">December 11, 2025</p>
+        <h3><a href="{{ talk_kcap_url }}">K-CAP</a></h3>
+        <p>Knowledge capture and ontologies.</p>
+      </article>
+      <article>
+        <p class="timeline-date">November 27, 2025</p>
+        <h3><a href="{{ talk_cmvs_url }}">CMVS Seminar Talk</a></h3>
+        <p>Seminar talk.</p>
+      </article>
+      <article>
+        <p class="timeline-date">November 7, 2025</p>
+        <h3><a href="{{ talk_aaai_url }}">AAAI Fall Symposium</a></h3>
+        <p>Knowledge graphs and robotics.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-section" id="publications">
+    <div class="section-heading">
+      <p class="section-label">Priority three</p>
+      <h2>Publications</h2>
+      <p class="section-intro">Selected work in robotic perception, knowledge representation, and robotics.</p>
+    </div>
+    <div class="publication-list">
+      <article>
+        <h3><a href="{{ pub_kcap_url }}">A K-CAP 2025 publication by Mark Adamik and Ilaria Tiddi</a></h3>
+        <p>K-CAP 2025, Dayton, Ohio, USA.</p>
+      </article>
+      <article>
+        <h3><a href="{{ pub_planowl_url }}">PlanOwl: Automated PDDL Files Generation from OWL Ontologies and Visual Language Models</a></h3>
+        <p>AAAI Fall Symposium Series, 2025.</p>
+      </article>
+      <article>
+        <h3><a href="{{ pub_bridging_bots_url }}">Bridging Bots: from Perception to Action via Multimodal-LMs and Knowledge Graphs</a></h3>
+        <p>Conference on Neurosymbolic Learning and Reasoning, Proceedings of Machine Learning Research, 2025.</p>
+      </article>
+      <article>
+        <h3><a href="{{ pub_orka_url }}">ORKA: An Ontology for Robotic Knowledge Acquisition</a></h3>
+        <p>EKAW 2024 proceedings, published in 2025.</p>
+      </article>
+      <article>
+        <h3><a href="{{ pub_pel_springer_url }}">Advancing Robotic Perception with Perceived-Entity Linking</a></h3>
+        <p>Springer proceedings chapter, 2025.</p>
+      </article>
+      <article>
+        <h3><a href="{{ pub_aaai24_url }}">Large-Scale Knowledge Graphs as a Tool for Enhanced Robotic Perception</a></h3>
+        <p>AAAI Fall Symposium Series, 2024.</p>
+      </article>
+      <article>
+        <h3><a href="{{ pub_copla_url }}">Supporting Companion Planting with the CoPla Ontology</a></h3>
+        <p>Knowledge Graphs for Sustainability workshop at ESWC, 2024.</p>
+      </article>
+      <article>
+        <h3><a href="{{ pub_pel_workshop_url }}">Towards a Definition and Conceptualisation of the Perceived-Entity Linking Problem</a></h3>
+        <p>RobOntics workshop, 2023.</p>
+      </article>
+      <article>
+        <h3><a href="{{ pub_explainability_url }}">Explainability in Collaborative Robotics: The Effect of Informing the User on Task Performance and Trust</a></h3>
+        <p>IEEE RO-MAN, 2022.</p>
+      </article>
+      <article>
+        <h3><a href="{{ pub_trust_url }}">The Difference Between Trust Measurement and Behavior: Investigating the Effect of Personalizing a Robot's Appearance on Trust in HRI</a></h3>
+        <p>IEEE RO-MAN, 2021.</p>
+      </article>
+    </div>
+  </section>
+</div>

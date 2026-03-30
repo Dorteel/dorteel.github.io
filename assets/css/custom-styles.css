@@ -1,0 +1,232 @@
+:root {
+  --paper: #fbf7ef;
+  --paper-deep: #f2e6d4;
+  --ink: #3f352c;
+  --muted: #6a5a4c;
+  --accent: #b86d3c;
+  --accent-soft: #f3dfcf;
+  --line: #ddcdb5;
+  --card: #fffaf2;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(232, 197, 164, 0.35), transparent 28%),
+    linear-gradient(180deg, #fffaf2 0%, var(--paper) 46%, #f6ecdd 100%);
+  color: var(--ink);
+  font-size: 15px;
+}
+
+.intro-header.big-img,
+.intro-header.no-img {
+  background: linear-gradient(135deg, rgba(184, 109, 60, 0.92), rgba(94, 71, 52, 0.92));
+}
+
+.intro-header .page-heading h1,
+.intro-header .page-heading .page-subheading {
+  text-shadow: none;
+}
+
+.intro-header .page-heading h1 {
+  font-size: clamp(1.5rem, 2.2vw, 2.4rem);
+  line-height: 1.05;
+}
+
+.intro-header .page-heading .page-subheading {
+  font-size: 0.9rem;
+}
+
+.research-home {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1.5rem 1.1rem 3rem;
+}
+
+.hero-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1.8fr) minmax(280px, 0.9fr);
+  gap: 1rem;
+  align-items: stretch;
+  margin-top: 0;
+}
+
+.hero-copy,
+.profile-card,
+.priority-card,
+.timeline-list article,
+.publication-list article {
+  background: rgba(255, 253, 248, 0.94);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(63, 53, 44, 0.07);
+}
+
+.hero-copy {
+  padding: 1.45rem;
+}
+
+.hero-copy h1 {
+  font-size: clamp(0.95rem, 1.5vw, 1.5rem);
+  line-height: 1.06;
+  letter-spacing: -0.05em;
+  margin: 0.1rem 0 0.75rem;
+}
+
+.hero-lead,
+.priority-card p,
+.timeline-list p,
+.publication-list p,
+.section-intro {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.button-primary,
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.68rem 1rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.button-primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.button-secondary {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.button-primary:hover,
+.button-secondary:hover,
+.text-link:hover {
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.profile-card,
+.priority-card {
+  padding: 1.1rem;
+}
+
+.profile-card h2,
+.priority-card h2,
+.content-section h2 {
+  margin-top: 0;
+  font-size: 1.35rem;
+}
+
+.eyebrow,
+.section-label,
+.timeline-date {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.fact-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.fact-list li + li {
+  margin-top: 0.4rem;
+}
+
+.priority-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin: 0.85rem 0 2.25rem;
+}
+
+.priority-card-main {
+  background: linear-gradient(180deg, #fffdf8 0%, #f4e6d6 100%);
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-row span {
+  background: var(--paper-deep);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.85rem;
+}
+
+.content-section {
+  margin-top: 2.2rem;
+}
+
+.section-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+  gap: 0.75rem;
+  margin-bottom: 0.8rem;
+}
+
+.timeline-list,
+.publication-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.timeline-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.timeline-list article,
+.publication-list article {
+  padding: 1rem 1.1rem;
+}
+
+.timeline-list h3,
+.publication-list h3 {
+  margin: 0.15rem 0 0.35rem;
+  font-size: 1rem;
+}
+
+.text-link,
+.timeline-list a,
+.publication-list a {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .hero-band,
+  .priority-grid,
+  .timeline-list {
+    grid-template-columns: 1fr;
+  }
+
+  .research-home {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-band {
+    margin-top: 0;
+  }
+}

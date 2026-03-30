@@ -1,16 +1,27 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About
+subtitle: Research background and interests
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I am Mark Adamik, a researcher in artificial intelligence with a background in robotics,
+knowledge representation, and human-robot interaction.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+My PhD work at Vrije Universiteit Amsterdam focuses on combining symbolic and sub-symbolic
+methods to improve robotic perception.
 
-What else do you need?
+Before and during this work, I have been involved in projects spanning:
 
-### My story
+- ontology engineering and knowledge representation for robotics
+- computer vision and robot perception
+- neuro-symbolic and multimodal AI
+- planning and reasoning for embodied agents
+- human-robot interaction and explainability
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+I previously studied Robotics at Aalborg University and have worked in research environments
+including Honda Research Institute and Aalborg University.
+
+Outside research, I am also interested in permaculture and completed a PDC in 2021.
+
+For a compact overview of experience, teaching, and technical background, the
+[CV](/resources/cv/mark-adamik-cv-2025-02.pdf) is the best place to start.
